@@ -137,7 +137,7 @@ int main(int argc, char **argv)
   char *auth_http = NULL;
   uint8_t *payload = NULL;
 
-  if(argc != 3){
+  if(argc < 3){
     fprintf(stderr,"[HELP] usage: ip web-content\n");
     fprintf(stderr,KYEL "       example: ./http_get 64.233.189.101 index.html user password\n" RESET);
     exit(1);
